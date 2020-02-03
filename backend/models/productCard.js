@@ -4,17 +4,16 @@ const Schema = mongoose.Schema;
 
 const cardsSchema = new Schema({
     product: { type: String, required: true },
+    img_photo: { type: String, required: true },
     name: { type: String, required: true },
     price: { type: Number, required: true },
-    productNumber: {type: String, required: true},
-    microprocessor: {type: String, required: true},
-    memory: {type: String, required: true},
-    display: {type: String, required: true},
-    hardDrive: {type: String, required: true},
-    power: {type: String, required: true},
-    weight: {type: String, required: true},
-
-
+    productNumber: {type: Number, required: true},
+    microprocessor: {type: Number, required: true},
+    memory: {type: Number, required: true},
+    display: {type: Number, required: true},
+    hardDrive: {type: Number, required: true},
+    power: {type: Number, required: true},
+    weight: {type: Number, required: true},
 }, {
     timestamps: true,
 });
